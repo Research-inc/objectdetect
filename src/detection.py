@@ -15,5 +15,3 @@ def detectWithSearchName(input_image, search_name="book"):
         im_array = r.plot()  # plot a BGR numpy array of predictions
         im = Image.fromarray(im_array[..., ::-1])  # RGB PIL image
         im.save('result.jpg')  # save image
-
-#detectWithSearchName('object.jpg', "car")
