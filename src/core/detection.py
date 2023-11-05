@@ -10,6 +10,9 @@ def detectWithSearchName(input_image, search_name="book"):
     # Run inference on an image
     results = model(input_image, classes=search_ind)
 
+    if len(results[0].boxes.cls) == 0:
+        return None
+
     # We extract the detected object's x,y coordinates and bounded box width and height
     x0  = results[0].boxes.xywh.numpy()[0][0]
     y0  = results[0].boxes.xywh.numpy()[0][1]
