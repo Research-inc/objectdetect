@@ -1,1 +1,1 @@
-from src.core import detectWithSearchName
+from .src import detectWithSearchName
