@@ -1,1 +1,1 @@
-from .core import detectWithSearchName
+from .core import detectWithSearchName, detectWithSearchName_v2, magnifier, closenessHelper, isObjectPresent
