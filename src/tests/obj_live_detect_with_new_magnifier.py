@@ -33,12 +33,10 @@ while(True):
 			prev_height = new_height
 			new_height = height
 			closenessHelper(magnifier(prev_height, new_height),quad)
-
-
-	#frame = cv.imread("result.jpg")
+			frame = cv.imread("result.jpg")
 
 	# Display the resulting frame 
-	#cv.imshow('frame', frame) 
+	cv.imshow('frame', frame)
 
 
 
